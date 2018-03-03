@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Javascript Form</title>
+  </head>
+  <body onload="hide();">
+    <header>
+      <h1>Welcome to XMAIL Application!</h1>
+      <p>Fill this form to apply for an xmail account.</p>
+      <p>Please note that certain requirements must be met.</p>
+    </header>
+    <form class="application" action="" method="get">
+      <div class="row" id="row1">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="Mark" onmouseout="one();">
+        <p class="side-note">Must not contain any numbers, symbols or spaces</p>
+      </div>
+      <div class="row" id="row2">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Smith" onmouseout="two();">
+        <p class="side-note">Must not contain any numbers, symbols or spaces</p>
+      </div>
+      <div class="row" id="row3">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@xmail.com" onmouseout="three();">
+        <p class="side-note">Must not contain any symbols or numbers</p>
+      </div>
+      <div class="row" id="row4">
+        <label for="pass">Password</label>
+        <input type="password" id="pass" onmouseout="four();">
+        <p class="side-note">Must contain more than 6 characters and at least a symbol and a number</p>
+      </div>
+      <div class="row" id="row5">
+        <label for="pass2">Confirm Password</label>
+        <input type="password" id="pass2" onmouseout="five();">
+        <p class="side-note">Must match the above password</p>
+      </div>
+      <div class="row" id="row6">
+        <label for="age">Age</label>
+        <input type="num" id="age" placeholder="&ge;16" onmouseout="six();">
+        <p class="side-note">Must be at least 16</p>
+      </div>
+      <div class="row" id="row7">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="num" id="phoneNumber" placeholder="0XXXXXXXXXX" onmouseout="seven();">
+      </div>
+      <div class="row" id="row8">
+        <label for="gender">Gender</label>
+        <input type="text" id="gender" placeholder="Male or Female" onmouseout="eight();">
+        <p class="side-note">Male or Female</p>
+      </div>
+      <div class="row" id="row9">
+        <label for="username">Username</label>
+        <input type="text" id="username" onmouseout="nine();">
+        <p class="side-note">Must have at least 6 characters at least and a number</p>
+      </div>
+      <div class="row" id="row10">
+        <label for="title">Title</label>
+        <input type="text" id="title" placeholder="Mr/Miss/Mrs" onmouseout="ten();">
+      </div>
+    </form>
+    <script src="javascript-form.js"></script>
+  </body>
+</html>

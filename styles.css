@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAEDF0;
+}
+.application {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  width: auto;
+}
+header p {
+  padding: 5px;
+  text-align: center;
+}
+input {
+  width: 60%;
+  height: 35px;
+  border-radius: 3px;
+  font-size: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+label {
+  width: 20%;
+  margin-top: 5px;
+  text-align: left;
+  padding: 5px;
+}
+.side-note {
+  text-align: left;
+  font-size: 70%;
+  width: 20%;
+  padding: 2px;
+}
